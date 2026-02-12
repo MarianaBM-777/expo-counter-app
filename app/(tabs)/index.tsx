@@ -20,17 +20,16 @@ return (
       <FAB
         label="-1"
         position="right2"
-        onPress={() => setCount(count - 1)}
-                
-      />
-      <FAB
-        label="Reset"
-        position="left"
         onPress={() => {
           if (count > 0) {
             setCount(count - 1);
           }
-        }}
+        }}        
+      />
+      <FAB
+        label="Reset"
+        position="left"
+        onPress={() => setCount(0)} 
       />
     </View>
   );
